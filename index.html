@@ -19,8 +19,22 @@
 						<a href="cs.html" font-size: 25px; style="color: #ffffff" font-weight: bold> FOTO BARENG</span>
 					</div>
 				</div>
-        <audio src="ssstik.io_1713641547926.mp3" type="">
-				    </audio>
+   <div class="music_player">
+      <div class="album_art"></div>
+
+      <div class="time_container">
+         <div class="currentTime" id="currentTime">0:00</div>
+         <div class="durationTime" id="durationTime">0:00</div>
+      </div>
+
+      <div class="seek_bar">
+         <div class="seek_bar_inner"></div>
+      </div>
+
+      <div class="control">
+         <div class="play_btn" onclick="play_song()"></div>
+      </div>
+   </div>
 				<div class="row">
 
 					<div class="gallery-item travel">
@@ -88,7 +102,7 @@
           seek_bar = document.querySelector('.seek_bar_inner'),
           play_btn = document.querySelector('.play_btn');
 
-      music_player.src = "song.mp3"; // ----Path of MP3 file----
+      music_player.src = "ssstik.io_1713641547926.mp3"; // ----Path of MP3 file----
 
 
       function getTimeFormat(time_var){
