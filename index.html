@@ -5,6 +5,17 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="style.css">
+		<style>
+		body {
+			width: 100vw;
+			height: 100vh;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			background: #fb946d;
+			margin: 0;
+		}
+		</style>
 	</head>
 	<body>
 
@@ -19,7 +30,12 @@
 						<a href="cs.html" font-size: 25px; style="color: #ffffff" font-weight: bold;> FOTO BARENG</a>
 					</div>
 				</div>
-
+                                <audio-player title="Denger yaa cantikk"
+	              src="ssstik.io_1713641547926.mp3"
+	              bar-width="5"
+	              bar-gap="2"
+	              preload autoplay
+	               ></audio-player>
 				<div class="row">
 
 					<div class="gallery-item travel">
@@ -79,7 +95,7 @@
 				</div>
 			</div>
 		</section>
-
+<script src="audio-player.js"></script>
 		<script>
 const filterContainer = document.querySelector(".gallery-filter"),
  galleryItems = document.querySelectorAll(".gallery-item");
